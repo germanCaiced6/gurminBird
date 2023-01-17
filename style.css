@@ -51,7 +51,7 @@ body {
 #character {
   width: 32px;
   height: 32px;
-  background-image:url(/character.png);
+  background-color: red;
   position: absolute;
   top: 200px;
   border-radius: 50%;
