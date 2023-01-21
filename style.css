@@ -45,7 +45,7 @@ nav {
   height: 565px;
   left: 400px;
   position: relative;
-  background-color: black;
+  background-image: url(./image/block.png);
   animation: block 2s infinite linear;
 }
 
