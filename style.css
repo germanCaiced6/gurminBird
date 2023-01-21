@@ -1,4 +1,5 @@
 * {
+  font-family: 'Oswald', sans-serif;
   padding: 0;
   margin: 0;
 }
@@ -6,42 +7,62 @@
 body {
   height: 100vh;
   overflow: hidden;
-  background-image: linear-gradient(to right top, #c233a9, #9d64d4, #6b85ec, #309ff2, #12b3eb);
+  background-repeat: inherit;
+  background-image: linear-gradient(to right top,
+      #c233a9,
+      #9d64d4,
+      #6b85ec,
+      #309ff2,
+      #12b3eb);
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 60px;
+  background-color: rgba(121, 232, 232, 0.434);
+  margin-bottom: 2rem;
+}
+.title {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
 }
 
 #game {
-  background-color: rgb(255, 255, 255);
+  background-image: url(./image/bg.png);
   margin: auto;
-  width: 400px;
-  height: 500px;
-  border: 1px solid black;
+  width: 480px;
+  height: 640px;
+  border: 6px solid black;
   overflow: hidden;
 }
 
 #block {
   width: 50px;
-  height: 500px;
-  background-color: black;
-  position: relative;
+  height: 565px;
   left: 400px;
+  position: relative;
+  background-color: black;
   animation: block 2s infinite linear;
 }
 
 @keyframes block {
   0% {
-    left: 400px
+    left: 480px;
   }
 
   100% {
-    left: -50px
+    left: -50px;
   }
-
 }
 
 #hole {
   width: 50px;
   height: 150px;
-  background-color: white;
+  background-color: rgb(62, 201, 255);
   position: relative;
   left: 400px;
   top: -500px;
@@ -51,15 +72,12 @@ body {
 #character {
   width: 32px;
   height: 32px;
-  background-image: url(./character.png);
+  background-image: url(./image/character.png);
   position: absolute;
-  top: 100px;
-  border-radius: 50%;
 }
 
 #score {
-
-  height: 32px;
+  height: 40px;
+  top: 100px;
   position: absolute;
-  top: 20px;
 }
