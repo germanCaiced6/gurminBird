@@ -22,7 +22,7 @@ setInterval(() => {
   }
   // Dead
   if ((characterTop > 640) || ((blockLeft < 20) && (blockLeft > -50) && ((cTop < holeTop) || (cTop > holeTop + 140)))) {
-    // alert("game over. Score:"+ counter);
+    alert("game over. Score:"+ counter);
     character.style.top = 100 + "px"
     counter = 0;
   }
